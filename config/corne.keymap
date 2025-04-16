@@ -153,12 +153,12 @@
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <27 26>;
+            key-positions = <38 15>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <28 29>;
+            key-positions = <38 16>;
         };
 
         undo {
@@ -168,12 +168,12 @@
 
         cut {
             bindings = <&kp LC(X)>;
-            key-positions = <14 15>;
+            key-positions = <14 37>;
         };
 
         comm {
             bindings = <&kp LC(SLASH)>;
-            key-positions = <12 13>;
+            key-positions = <17 38>;
         };
     };
 
@@ -189,10 +189,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp Q            &kp B         &kp M            &kp G              &kp K            &kp X      &kp L              &kp O             &kp U                 &kp Y             &kp DELETE
-&kp TAB    &HML LEFT_GUI D  &HML LCTRL N  &HML LEFT_ALT S  &HML LEFT_SHIFT T  &kp W            &kp Z      &HMR LEFT_SHIFT R  &HMR RIGHT_ALT A  &HMR RIGHT_CONTROL E  &HMR RIGHT_GUI I  &kp SQT
-&kp LSHFT  &kp SLASH        &kp F         &kp C            &kp P              &kp V            &kp J      &kp H              &kp COMMA         &kp DOT               &kp SLASH         &kp RETURN
-                                          &lt 4 LMETA      &mo 1              &kp BACKSPACE    &kp SPACE  &mo 2              &mo 3
+&kp ESC    &kp Q            &kp B         &kp M            &kp G              &kp K              &kp X      &kp L              &kp O             &kp U                 &kp Y             &kp DELETE
+&kp TAB    &HML LEFT_GUI D  &HML LCTRL N  &HML LEFT_ALT S  &HML LEFT_SHIFT T  &kp W              &kp Z      &HMR LEFT_SHIFT R  &HMR RIGHT_ALT A  &HMR RIGHT_CONTROL E  &HMR RIGHT_GUI I  &kp SQT
+&kp LSHFT  &kp SLASH        &kp F         &kp C            &kp P              &kp V              &kp J      &kp H              &kp COMMA         &kp DOT               &kp SLASH         &kp RETURN
+                                          &lt 4 LMETA      &mo 1              &lt 1 BACKSPACE    &kp SPACE  &mo 2              &mo 3
             >;
         };
 
@@ -208,7 +208,7 @@
 &kp ESCAPE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &trans  &trans       &trans         &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp KP_PLUS
 &kp TAB     &trans        &trans        &trans      &trans  &trans       &trans         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp KP_SUBTRACT
 &kp LSHFT   &trans        &trans        &trans      &trans  &trans       &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &kp RETURN
-                                        &kp LGUI    &trans  &kp SPACE    &kp BACKSPACE  &trans        &kp RALT
+                                        &kp LGUI    &trans  &kp SPACE    &kp BACKSPACE  &kp N0        &kp RALT
             >;
         };
 
