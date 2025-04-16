@@ -191,7 +191,7 @@
             bindings = <
 &kp ESC    &kp Q            &kp B         &kp M            &kp G              &kp K              &kp X      &kp L              &kp O             &kp U                 &kp Y             &kp DELETE
 &kp TAB    &HML LEFT_GUI D  &HML LCTRL N  &HML LEFT_ALT S  &HML LEFT_SHIFT T  &kp W              &kp Z      &HMR LEFT_SHIFT R  &HMR RIGHT_ALT A  &HMR RIGHT_CONTROL E  &HMR RIGHT_GUI I  &kp SQT
-&kp LSHFT  &kp SLASH        &kp F         &kp C            &kp P              &kp V              &kp J      &kp H              &kp COMMA         &kp DOT               &kp SLASH         &kp RETURN
+&kp LSHFT  &kp SLASH        &kp F         &kp C            &kp P              &kp V              &kp J      &kp H              &kp COMMA         &kp DOT               &kp SEMI          &kp RETURN
                                           &lt 4 LMETA      &mo 1              &lt 1 BACKSPACE    &kp SPACE  &mo 2              &mo 3
             >;
         };
