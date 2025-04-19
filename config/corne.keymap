@@ -150,13 +150,6 @@
             label = "OTIL";
         };
 
-        cid: cid {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp C>;
-            label = "CID";
-        };
-
         endsemi: endsemi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -181,8 +174,43 @@
         ca: ca {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp C &kp TILDE &kp A>;
+            bindings = <&kp SQT &kp C &kp A>;
             label = "CA";
+        };
+
+        cao: cao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C &kp TILDE &kp A &kp O>;
+            label = "CAO";
+        };
+
+        coes: coes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C &kp TILDE &kp O &kp E &kp S>;
+            label = "COES";
+        };
+
+        co: co {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C &kp O>;
+            label = "CO";
+        };
+
+        cu: cu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C &kp U>;
+            label = "CU";
+        };
+
+        cat: cat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C &kp TILDE &kp A>;
+            label = "CAT";
         };
     };
 
@@ -244,11 +272,6 @@
             key-positions = <20 8>;
         };
 
-        ced {
-            bindings = <&cid>;
-            key-positions = <31 27>;
-        };
-
         ca {
             bindings = <&ca>;
             key-positions = <27 20>;
@@ -257,6 +280,31 @@
         oes {
             bindings = <&oes>;
             key-positions = <21 8>;
+        };
+
+        cu {
+            bindings = <&cu>;
+            key-positions = <27 9>;
+        };
+
+        co {
+            bindings = <&co>;
+            key-positions = <27 8>;
+        };
+
+        cao {
+            bindings = <&cao>;
+            key-positions = <27 20 8>;
+        };
+
+        atil {
+            bindings = <&atil>;
+            key-positions = <20 19>;
+        };
+
+        catil {
+            bindings = <&cat>;
+            key-positions = <27 20 19>;
         };
     };
 
