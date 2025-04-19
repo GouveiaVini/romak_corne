@@ -163,6 +163,27 @@
             bindings = <&kp END &kp SEMI>;
             label = "ENDSEMI";
         };
+
+        ao: ao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp A &kp O>;
+            label = "AO";
+        };
+
+        oes: oes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp O &kp E &kp S>;
+            label = "OES";
+        };
+
+        ca: ca {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C &kp TILDE &kp A>;
+            label = "CA";
+        };
     };
 
     combos {
@@ -191,6 +212,51 @@
         comm {
             bindings = <&kp LC(SLASH)>;
             key-positions = <17 38>;
+        };
+
+        ih {
+            bindings = <&ih>;
+            key-positions = <31 22>;
+        };
+
+        eh {
+            bindings = <&eh>;
+            key-positions = <21 31>;
+        };
+
+        ah {
+            bindings = <&ah>;
+            key-positions = <31 20>;
+        };
+
+        oh {
+            bindings = <&oh>;
+            key-positions = <31 8>;
+        };
+
+        uh {
+            bindings = <&uh>;
+            key-positions = <31 9>;
+        };
+
+        ao {
+            bindings = <&ao>;
+            key-positions = <20 8>;
+        };
+
+        ced {
+            bindings = <&cid>;
+            key-positions = <31 27>;
+        };
+
+        ca {
+            bindings = <&ca>;
+            key-positions = <27 20>;
+        };
+
+        oes {
+            bindings = <&oes>;
+            key-positions = <21 8>;
         };
     };
 
@@ -222,10 +288,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &trans  &trans       &trans         &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp KP_PLUS
-&kp TAB     &trans        &trans        &trans      &trans  &trans       &trans         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp KP_SUBTRACT
-&kp LSHFT   &trans        &trans        &trans      &trans  &trans       &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &kp RETURN
-                                        &kp LGUI    &trans  &kp SPACE    &kp BACKSPACE  &kp N0        &kp RALT
+&kp ESCAPE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &trans  &trans       &trans       &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp KP_PLUS
+&kp TAB     &trans        &trans        &trans      &trans  &trans       &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp KP_SUBTRACT
+&kp LSHFT   &trans        &trans        &trans      &trans  &trans       &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &kp RETURN
+                                        &kp LGUI    &trans  &kp SPACE    &lt 4 SPACE  &kp N0        &kp RALT
             >;
         };
 
@@ -256,8 +322,8 @@
 
         layer_4 {
             bindings = <
-&trans  &atil   &trans  &eh     &trans  &trans    &trans  &uh     &ih     &oh     &otil   &trans
-&trans  &ah     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ah     &eh     &ih     &trans
 &trans  &trans  &trans  &cid    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
