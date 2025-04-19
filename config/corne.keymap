@@ -305,6 +305,11 @@
             bindings = <&cat>;
             key-positions = <27 20 19>;
         };
+
+        coes {
+            bindings = <&coes>;
+            key-positions = <27 21 8>;
+        };
     };
 
     keymap {
@@ -371,7 +376,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ah     &eh     &ih     &trans
-&trans  &trans  &trans  &cid    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
