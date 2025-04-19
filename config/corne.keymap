@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -366,7 +365,7 @@
 
         layer_6 {
             bindings = <
-&kp ESCAPE      &trans    &trans   &trans  &trans  &trans       &trans  &trans  &trans  &kp TAB         &mkp LCLK       &kp RET
+&kp ESCAPE      &trans    &trans   &trans  &trans  &trans       &trans  &trans  &trans  &kp TAB         &trans          &kp RET
 &kp TAB         &trans    &trans   &trans  &trans  &trans       &trans  &trans  &trans  &kp BACKSPACE   &kp UP_ARROW    &kp DELETE
 &kp LEFT_SHIFT  &kp HOME  &kp END  &trans  &trans  &trans       &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                                    &trans  &trans  &kp SPACE    &trans  &trans  &trans
