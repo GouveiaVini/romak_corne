@@ -268,7 +268,7 @@
             >;
         };
 
-        lower_layer {
+        number {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -277,14 +277,14 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &trans  &trans       &trans       &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp KP_PLUS
-&kp TAB     &trans        &trans        &trans      &trans  &trans       &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp KP_SUBTRACT
-&kp LSHFT   &trans        &trans        &trans      &trans  &trans       &kp N0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &kp RETURN
-                                        &kp LGUI    &trans  &kp SPACE    &lt 4 SPACE  &kp N0        &kp RALT
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR    &trans          &trans           &trans     &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp KP_PLUS
+&trans  &kp LEFT_GUI  &kp LCTRL     &kp LEFT_ALT  &kp LEFT_SHIFT  &trans           &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp KP_SUBTRACT
+&trans  &trans        &trans        &trans        &trans          &trans           &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &kp RETURN
+                                    &kp LGUI      &trans          &kp BACKSPACE    &kp SPACE  &kp N0        &trans
             >;
         };
 
-        raise_layer {
+        symbols {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -293,28 +293,28 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESCAPE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET      &kp AMPS   &kp KP_MULTIPLY   &kp LPAR         &kp RPAR  &kp TILDE
-&kp TAB     &trans    &trans  &trans    &trans    &trans       &kp MINUS      &kp EQUAL  &kp LEFT_BRACKET  &kp RBKT         &kp BSLH  &kp GRAVE
-&kp LSHFT   &trans    &trans  &trans    &trans    &trans       &kp UNDER      &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp PIPE  &kp RETURN
-                              &kp LGUI  &trans    &kp SPACE    &kp BACKSPACE  &trans     &kp RALT
+&trans  &kp EXCL      &kp AT     &kp HASH      &kp DLLR        &kp PRCNT        &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_ASTERISK  &kp TILDE
+&trans  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans           &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET      &kp RBKT               &kp BSLH         &kp GRAVE
+&trans  &trans        &trans     &trans        &trans          &trans           &kp UNDER  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE         &kp RETURN
+                                 &kp LGUI      &trans          &kp BACKSPACE    &kp SPACE  &trans     &trans
             >;
         };
 
-        layer_6 {
+        setas {
             bindings = <
-&kp ESCAPE      &trans    &trans   &trans  &trans  &trans       &trans  &trans  &trans  &kp TAB         &trans          &kp RET
-&kp TAB         &trans    &trans   &trans  &trans  &trans       &trans  &trans  &trans  &kp BACKSPACE   &kp UP_ARROW    &kp DELETE
-&kp LEFT_SHIFT  &kp HOME  &kp END  &trans  &trans  &trans       &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-                                   &trans  &trans  &kp SPACE    &trans  &trans  &trans
+&trans  &trans        &trans     &trans        &trans          &trans           &trans     &trans  &trans  &kp TAB         &trans          &kp RET
+&trans  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans           &trans     &trans  &trans  &kp BACKSPACE   &kp UP_ARROW    &kp DELETE
+&trans  &kp HOME      &kp END    &trans        &trans          &trans           &trans     &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+                                 &trans        &trans          &kp BACKSPACE    &kp SPACE  &trans  &trans
             >;
         };
 
-        layer_4 {
+        function {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ah     &eh     &ih     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans        &kp LC(F12)  &trans        &trans          &trans           &kp F10    &kp F7  &kp F8  &kp F9  &trans  &trans
+&trans  &kp LEFT_GUI  &kp LCTRL    &kp LEFT_ALT  &kp LEFT_SHIFT  &trans           &kp F11    &kp F4  &kp F5  &kp F6  &trans  &trans
+&trans  &trans        &trans       &trans        &trans          &trans           &kp F12    &kp F1  &kp F2  &kp F3  &trans  &trans
+                                   &trans        &trans          &kp BACKSPACE    &kp SPACE  &trans  &trans
             >;
         };
     };
