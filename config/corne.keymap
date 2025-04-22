@@ -260,6 +260,16 @@
             bindings = <&lt 5 LC(LA(DELETE))>;
             key-positions = <37 40>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+        };
+
+        return {
+            bindings = <&kp RET>;
+            key-positions = <25 26>;
+        };
     };
 
     keymap {
