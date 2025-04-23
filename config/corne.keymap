@@ -282,6 +282,11 @@
             bindings = <&coes>;
             key-positions = <27 21 8>;
         };
+
+        copy2 {
+            bindings = <&kp LC(LS(V))>;
+            key-positions = <38 16 24>;
+        };
     };
 
     keymap {
