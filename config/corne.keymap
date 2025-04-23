@@ -166,6 +166,13 @@
             bindings = <&kp EQUAL &kp GREATER_THAN>;
             label = "SETA";
         };
+
+        qu: qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+            label = "QU";
+        };
     };
 
     combos {
@@ -263,12 +270,17 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
         };
 
         return {
             bindings = <&kp RET>;
-            key-positions = <25 26>;
+            key-positions = <26 27>;
+        };
+
+        coes {
+            bindings = <&coes>;
+            key-positions = <27 21 8>;
         };
     };
 
@@ -284,7 +296,7 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp Q            &kp B         &kp M            &kp G              &kp K            &kp X      &kp L              &kp O             &kp U                 &kp Y             &kp DEL
+&kp ESC    &qu              &kp B         &kp M            &kp G              &kp K            &kp X      &kp L              &kp O             &kp U                 &kp Y             &kp DEL
 &kp TAB    &HML LEFT_GUI D  &HML LCTRL N  &HML LEFT_ALT S  &HML LEFT_SHIFT T  &kp W            &kp Z      &HMR LEFT_SHIFT R  &HMR RIGHT_ALT A  &HMR RIGHT_CONTROL E  &HMR RIGHT_GUI I  &kp SQT
 &kp LSHFT  &kp SLASH        &kp F         &kp C            &kp P              &kp V            &kp J      &kp H              &kp COMMA         &kp DOT               &endsc 0 SEMI     &kp RETURN
                                           &lt 4 SPACE      &mo 1              &kp BACKSPACE    &kp SPACE  &mo 2              &mo 3
