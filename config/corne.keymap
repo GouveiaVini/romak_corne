@@ -287,6 +287,11 @@
             bindings = <&kp LC(LS(V))>;
             key-positions = <38 16 24>;
         };
+
+        game {
+            bindings = <&tog 6>;
+            key-positions = <36 41>;
+        };
     };
 
     keymap {
@@ -364,6 +369,15 @@
 &trans  &trans  &trans    &trans    &trans    &msc SCRL_UP      &trans  &trans          &mmv MOVE_UP    &trans           &mmv MOVE_Y(-300)  &mmv MOVE_Y(-600)
 &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &msc SCRL_DOWN    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans             &trans
                           &trans    &trans    &trans            &trans  &trans          &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&kp ESC  &kp TAB         &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp B    &kp LEFT_SHIFT  &kp S  &kp A  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&kp O    &kp LCTRL       &kp Z  &kp X  &kp C  &kp V        &trans  &trans  &trans  &trans  &trans  &tog 0
+                                &kp J  &kp I  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
