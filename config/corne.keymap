@@ -374,10 +374,10 @@
 
         game {
             bindings = <
-&kp ESC  &kp TAB         &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
-&kp B    &kp LEFT_SHIFT  &kp S  &kp A  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-&kp O    &kp LCTRL       &kp Z  &kp X  &kp C  &kp V        &trans  &trans  &trans  &trans  &trans  &tog 0
-                                &kp J  &kp I  &kp SPACE    &trans  &trans  &trans
+&kp ESC         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans  &trans     &trans      &trans  &trans
+&kp B           &kp TAB       &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans     &trans      &trans  &trans
+&kp LEFT_SHIFT  &kp LCTRL     &kp S         &kp A         &kp D         &kp F           &kp J   &kp H   &kp COMMA  &kp PERIOD  &trans  &trans
+                                            &kp T         &kp I         &kp SPACE       &trans  &trans  &trans
             >;
         };
     };
