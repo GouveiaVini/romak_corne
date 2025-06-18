@@ -350,9 +350,9 @@
 
         setas {
             bindings = <
-&trans    &trans   &trans  &trans  &trans         &trans       &trans  &trans  &trans          &trans          &trans           &trans
-&trans    &trans   &trans  &trans  &trans         &trans       &trans  &trans  &kp BACKSPACE   &kp UP_ARROW    &kp DELETE       &trans
-&kp HOME  &kp END  &trans  &trans  &trans         &trans       &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans    &trans   &trans  &trans  &trans         &trans       &trans  &trans  &trans  &trans          &trans          &trans
+&trans    &trans   &trans  &trans  &trans         &trans       &trans  &trans  &trans  &kp BACKSPACE   &kp UP_ARROW    &kp DELETE
+&kp HOME  &kp END  &trans  &trans  &trans         &trans       &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
                            &trans  &kp BACKSPACE  &kp SPACE    &trans  &trans
             >;
         };
