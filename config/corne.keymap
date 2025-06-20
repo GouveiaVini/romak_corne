@@ -172,18 +172,18 @@
             label = "QU";
         };
 
-        aspD: aspas {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
-            label = "ASPAS";
-        };
-
-        asp: aspas {
+        asD: asD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
-            label = "ASPAS";
+            label = "ASD";
+        };
+
+        asS: asS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+            label = "ASS";
         };
     };
 
@@ -311,12 +311,12 @@
         };
 
         aspas {
-            bindings = <&asp>;
+            bindings = <&asS>;
             key-positions = <38 5>;
         };
 
         aspasDuplas {
-            bindings = <&aspD>;
+            bindings = <&asD>;
             key-positions = <38 5 4>;
         };
     };
