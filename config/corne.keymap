@@ -185,6 +185,13 @@
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
             label = "ASS";
         };
+
+        ee: ee {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp E>;
+            label = "EE";
+        };
     };
 
     combos {
@@ -318,6 +325,11 @@
         aspasDuplas {
             bindings = <&asD>;
             key-positions = <38 5 4>;
+        };
+
+        ee {
+            bindings = <&ee>;
+            key-positions = <22 21>;
         };
     };
 
