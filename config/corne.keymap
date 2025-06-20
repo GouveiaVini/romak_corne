@@ -171,6 +171,20 @@
             bindings = <&kp Q &kp U>;
             label = "QU";
         };
+
+        aspD: aspas {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+            label = "ASPAS";
+        };
+
+        asp: aspas {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SPACE>;
+            label = "ASPAS";
+        };
     };
 
     combos {
@@ -294,6 +308,16 @@
         caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <8 9>;
+        };
+
+        aspas {
+            bindings = <&asp>;
+            key-positions = <38 5>;
+        };
+
+        aspasDuplas {
+            bindings = <&aspD>;
+            key-positions = <38 5 4>;
         };
     };
 
