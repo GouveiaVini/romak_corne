@@ -49,6 +49,8 @@
             label = "TAP_QU";
             #binding-cells = <0>;
             bindings = <&qu>, <&kp Q>;
+
+            tapping-term-ms = <250>;
         };
 
         tap_barra: tap_barra {
@@ -66,7 +68,7 @@
             #binding-cells = <0>;
             bindings = <&kp SEMICOLON>, <&kp COLON>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <250>;
         };
     };
 
