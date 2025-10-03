@@ -43,6 +43,31 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
+
+        tap_qu: tap_qu {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_QU";
+            #binding-cells = <0>;
+            bindings = <&qu>, <&kp Q>;
+        };
+
+        tap_barra: tap_barra {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_BARRA";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp QUESTION>;
+
+            tapping-term-ms = <180>;
+        };
+
+        tap_doispontos: tap_doispontos {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DOISPONTOS";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            tapping-term-ms = <180>;
+        };
     };
 
     macros {
@@ -316,12 +341,12 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 1>;
+            key-positions = <1 0>;
         };
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <8 9>;
+            key-positions = <10 11>;
         };
 
         aspas {
@@ -338,6 +363,16 @@
             bindings = <&ee>;
             key-positions = <22 21>;
         };
+
+        run {
+            bindings = <&kp F8>;
+            key-positions = <12 13>;
+        };
+
+        saveall {
+            bindings = <&kp F14>;
+            key-positions = <24 25>;
+        };
     };
 
     keymap {
@@ -352,9 +387,9 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp Q            &kp B         &kp M            &kp G              &kp K            &kp X      &kp L              &kp O             &kp U                 &kp Y             &kp DEL
+&kp ESC    &tap_qu          &kp B         &kp M            &kp G              &kp K            &kp X      &kp L              &kp O             &kp U                 &kp Y             &kp DEL
 &kp TAB    &HML LEFT_GUI D  &HML LCTRL N  &HML LEFT_ALT S  &HML LEFT_SHIFT T  &kp W            &kp Z      &HMR LEFT_SHIFT R  &HMR RIGHT_ALT A  &HMR RIGHT_CONTROL E  &HMR RIGHT_GUI I  &kp SQT
-&kp LSHFT  &kp SLASH        &kp F         &kp C            &kp P              &kp V            &kp J      &kp H              &kp COMMA         &kp DOT               &endsc 0 SEMI     &kp RETURN
+&kp LSHFT  &tap_barra       &kp F         &kp C            &kp P              &kp V            &kp J      &kp H              &kp COMMA         &kp DOT               &tap_doispontos   &kp RETURN
                                           &lt 4 SPACE      &mo 1              &kp BACKSPACE    &kp SPACE  &mo 2              &mo 3
             >;
         };
