@@ -55,7 +55,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_BARRA";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp QUESTION>;
+            bindings = <&kp QUESTION>, <&kp SLASH>;
 
             tapping-term-ms = <180>;
         };
