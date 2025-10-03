@@ -57,7 +57,7 @@
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp SLASH>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <250>;
         };
 
         tap_doispontos: tap_doispontos {
